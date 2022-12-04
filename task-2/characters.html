@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>HTML and CSS for Complete Beginners Homework: Characters</title>
+
+		<!-- This CSS and font is purely for presentational purposes. -->
+		<link rel="stylesheet" href="css/presentation.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+
+		<style>
+			*{
+				box-sizing: border-box;
+				font-family: poppins, sans-serif;
+			}
+			.learn{
+				background-color: antiquewhite;
+			}
+			.main-box{
+				background-color: rgb(253, 254, 255);
+				display: flex;
+				flex-direction: column;
+				padding:1.5rem;
+				border-radius: 9px;
+				margin-top: 10%;
+				box-shadow: 0.5px 2px 10px 10px rgba(0, 0, 0, 0.1);
+				
+			}
+			h2{
+				position:absolute;
+				line-height: 2px;
+				margin-top:18%;
+				right:35% ;
+			}
+			h4{
+				position: absolute;
+				margin-top: 20%;
+				right: 40%;
+			}
+			#stats{
+				line-height: 20px;
+				position:absolute;
+				margin-top:24%;
+				right:35%;
+				color: rgba(0, 5, 9,.5);
+				font-size: 8px;
+			}
+			.image-container{
+				border-radius: 16px;
+				width: 561px;
+				height: 297px;
+				margin-bottom: 2rem;
+				margin-top: 20px;
+				margin-left: 29px;
+			}
+			#elephant{
+				background-image: url("images/characters/bg-elephant.jpg");
+			}
+			#cat{
+				background-image: url("./images/characters/bg-cat.jpg");
+			}
+			#legend{
+				background-image: url("./images/characters/bg-bunny.jpg");
+			}
+			/* Write your CSS here */
+		</style>
+	</head>
+	<body>
+		<section class="learn">
+			<div class = "main-box">
+				<div class="image-container" id ="elephant">
+				<h2>The viking</h2>
+				<h4><pre>68%   522</pre></h4>
+				<h6 id="stats"><pre>Win Rate            Games Played</pre></h6>
+			</div>
+			<div class = "image-container" id = "cat">
+				<h2>The Sorceress</h2>
+				<h4><pre>68%   522</pre></h4>
+				<h6 id="stats"><pre>Win Rate            Games Played</pre></h6>
+			</div>
+			<div class = "image-container" id ="legend">
+				<h2>The Fashionista</h2>
+				<h4><pre>68%   522</pre></h4>
+				<h6 id="stats"><pre>Win Rate            Games Played</pre></h6>
+			</div>
+				<!-- Practice area start -->
+
+			<!-- Write your HTML here -->
+
+			<!-- Practice area end -->
+		</section>
+
+		<section class="preview" data-content="Characters">
+			<img width="720px" src="images/reference/characters.png" alt="Characters" />
+		</section>
+	</body>
+</html>

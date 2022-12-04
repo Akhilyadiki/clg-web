@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>HTML and CSS for Complete Beginners Homework: Contact form</title>
+
+    <!-- This CSS and font is purely for presentational purposes. -->
+    <link rel="stylesheet" href="css/presentation.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .learn {
+        background-color: rgb(229, 228, 226);
+      }
+      .form-container {
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        border-radius: 5px;
+        box-shadow: 0.5px 2px 10px 10px rgba(0, 0, 0, 0.1);
+        font-family: poppins, sans-serif;
+        padding: 2rem;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+      }
+      label {
+        font-weight: bold;
+      }
+      input,
+      textarea {
+        box-sizing: border-box;
+        font-family: Poppins, sans-serif;
+        background-color: rgb(235, 240, 244);
+        border-radius: 5px;
+        border: none;
+        line-height: 3.5;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        align-items: center;
+        width: 100%;
+        padding: 12px 20px;
+      }
+      select {
+        width: 100%;
+        padding: 16px 20px;
+        border: none;
+        border-radius: 5px;
+      }
+      h1 {
+        font-size: 29px;
+        font-weight: bold;
+      }
+      input[type="button"] {
+        background-color: rgb(62, 178, 250);
+        border: none;
+        color: white;
+        cursor: pointer;
+        padding: 16px 32px;
+        font-weight: bolder;
+        font-size: large;
+        border-radius: 10px;
+      }
+
+      /* Write your CSS here */
+    </style>
+  </head>
+  <body>
+    <section class="learn">
+      <div class="form-container">
+        <form>
+          <img
+            src="./images/contact-form/envelope.svg"
+            height="30px"
+            width="30px"
+          />
+          <h1>Let's get in touch</h1>
+          <label>Name</label>
+          <input type="text" name="Name" id="name" placeholder="Chuck Norris" />
+          <label for="mail">Email</label>
+          <input
+            type="mail"
+            name="mail"
+            id="mail"
+            placeholder="test@gmail.com"
+          />
+          <label for="department">Department</label>
+          <select id="department" name="department">
+            <option value="" disabled selected>select a Department</option>
+            <option value="CSE">CSE</option>
+            <option value="ECE">ECE</option>
+            <option value="EEE">EEE</option>
+            <option value="MECH">MECH</option>
+          </select>
+          <label for="message">Message</label>
+          <textarea name="message" rows="5" cols="30" id="message"> </textarea>
+          <input type="button" name="Send Message" value="Send Message" />
+        </form>
+      </div>
+      <!-- Practice area start -->
+
+      <!-- Write your HTML here -->
+
+      <!-- Practice area end -->
+    </section>
+
+    <section class="preview" data-content="Contact form">
+      <img
+        width="560px"
+        src="images/reference/contact-form.png"
+        alt="Contact form"
+      />
+    </section>
+  </body>
+</html>

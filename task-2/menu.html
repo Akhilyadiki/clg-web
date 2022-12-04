@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>HTML and CSS for Complete Beginners Homework: Menu</title>
+
+		<!-- This CSS and font is purely for presentational purposes. -->
+		<link rel="stylesheet" href="css/presentation.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+
+		<style>
+			.learn{
+				background-color:antiquewhite;
+				justify-content: center;
+				font-family: poppins, sans-serif;
+				font-size: large;
+			}
+			.container{
+				margin-top: 8%;
+				margin-bottom: auto;
+				height:auto;
+				margin-left: auto;
+				margin-right: auto;
+				width:50%;
+				padding: 2rem;
+				background-color: white;
+				border-radius: 5px;
+        		box-shadow: 0.5px 2px 10px 10px rgba(0, 0, 0, 0.1);
+
+			}
+			#sub-menu{
+				background-color: rgb(226, 255, 255);
+				border:none;
+				border-radius: 10px;
+				margin-top: 10px;
+			}
+			ul li{
+				list-style-type: none;
+			}
+			.menu-container{
+				display: flex;
+				flex-direction: column;
+			}
+			#shit,.shit-media{
+				display: flex;
+				gap:2rem;
+				margin-top: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<section class="learn">
+			<div class ="container">
+				<h2>Application Menu</h2>
+				<div class ="menu-container">
+					<div id="shit"><img src="./images/menu/menu-icon-1.svg" height="30px" width="30px">Dashboard</div>
+					<div id="shit"><img src="./images/menu/menu-icon-2.svg" height="30px" width="30px">Pages</div>
+					<div id="shit"><img src="./images/menu/menu-icon-3.svg" height="30px" width="30px">Posts</div>
+					<div class="shit-media"><img src="./images/menu/menu-icon-4.svg" height="30px" width="30px">Media</div>
+					<div id = "sub-menu">
+						<ul>
+							<li>Media Library</li>
+							<li>Add Media</li>
+							<li>Media statitics</li>
+						</ul>
+					</div>
+					<div id="shit"><img src="./images/menu/menu-icon-5.svg" height="30px" width="30px">Users</div>
+					<div id="shit"><img src="./images/menu/menu-icon-6.svg" height="30px" width="30px">settings</div>
+				</div>
+			</div>
+			<!-- Practice area start -->
+
+			<!-- Write your HTML here -->
+
+			<!-- Practice area end -->
+		</section>
+
+		<section class="preview" data-content="Menu">
+			<img width="458px" src="images/reference/menu.png" alt="Menu" />
+		</section>
+	</body>
+</html>
